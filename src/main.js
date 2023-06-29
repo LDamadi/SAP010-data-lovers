@@ -1,4 +1,4 @@
-import { filmsDirector, filteredFilms, orderFilms } from './data.js';
+import { filmsDirector, filteredFilms, orderFilms, resultPercent } from './data.js';
 import data from './data/ghibli/ghibli.js';
 const filmList = data.films
 const section = document.querySelector(".container-films")
@@ -45,6 +45,17 @@ function orderFilmsByName() {
   const orderFilmsResult = orderFilms(selectedOrder, filmList);
   renderFilms(orderFilmsResult); // Usei filmList no lugar de a, b e ouve movimentação na ordem dos filmes, contudo, só mudou a posição dos dois primeiros 
 }
+
+
+//const resultadoElement = document.getElementById("resultado");//
+director.addEventListener('change', function () {
+  const selectedDirector = director.value;
+  //const filteredFilms = filmsDirector(films, selectedDirector);
+  const percentage = resultPercent(selectedDirector, filmList);
+  //displayFilms(filteredFilms);
+  document.getElementByIdById("resultado").innerHTML = percentage;
+});
+
 
 //filterFilmsByTitle()
 
