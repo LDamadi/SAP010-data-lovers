@@ -113,51 +113,7 @@ footer {
   font-size: 0.8rem;
 }
 
-/*@media screen and (max-width: 1000px) {
-  body {
 
-  }
-
-  header {
-
-  }
-
-  header .background {
-
-  }
-
-  main {
-
-  }
-  main .background {
-
-  }
-  p {
-
-  }
-
-  img {
-
-  }
-
-  .films img {
-
-  }
-
-  .container-films {
-
-  }
-
-  form {
-
-  }
-
-  footer {
-
-  }
-
-}
-percebemos que não teve alteração na interface com telas maiores (notebook, desktop e afins)*/
 
 @media screen and (max-width: 560px){
   header {

@@ -40,6 +40,7 @@ export function resultPercent(valor, dados) {
   const totalFilms = dados.length;
   const filmList = dados.filter(film => film.director === valor);
   const percentage = (filmList.length/totalFilms ) * 100; 
-  
+  console.log(percentage)
   return 'Este diretor produziu ' + percentage + '% do total de filmes do estúdio.';
   }
+  
