@@ -1,4 +1,4 @@
-import { filmsDirector, filteredFilms, orderFilms, resultPercent } from './data.js';
+import { filmsDirector, filteredFilms, orderFilms, percentual} from './data.js';
 import data from './data/ghibli/ghibli.js';
 const filmList = data.films
 const section = document.querySelector(".container-films")
@@ -46,21 +46,39 @@ function orderFilmsByName() {
   renderFilms(orderFilmsResult); // Usei filmList no lugar de a, b e ouve movimentação na ordem dos filmes, contudo, só mudou a posição dos dois primeiros 
 }
 
+const elementoResult = document.getElementById("resultado");
+//elementoResult.innerHTML = "resultado";
+elementoResult.innerHTML = "Este diretor produziu " + resultado + "% do total de filmes do estúdio.";
 
-//const resultadoElement = document.getElementById("resultado");//
-director.addEventListener('change', function () {
-  const selectedDirector = director.value;
-  //const filteredFilms = filmsDirector(films, selectedDirector);
-  const percentage = resultPercent(selectedDirector, filmList);
-  //displayFilms(filteredFilms);
-  document.getElementByIdById("resultado").innerHTML = percentage;
-});
+elementoResult.addEventListener('change', percentualF);
 
+function percentualF(){
+  const filmsDirector = elementoResult.value;
+  const resultado = percentual(filmsDirector.length, filmList.length);//executamos a função percentual
+  //elementoResult.innerHTML = "resultado";
+  //renderFilms(resultado);
+
+  console.log (percentual);
+}
+  
+
+  
+
+  //document.getElementById("resultado").innerHTML = porcentagem
+
+//const resultadoElement = document.getElementById("resultado");
+//const resultado = percentual(filmsDirector.length, filmList.length);
+
+//const resultadoElemento = document.getElementById("resultado");
+//resultadoElemento.innerHTML = resultado;
+
+//const filteredFilms = filmsDirector(films, selectedDirector);
+//const porcentagem = percentual(filmsDirector, filmList);
+//displayFilms(filteredFilms);
+  
 
 //filterFilmsByTitle()
 
 //renderFilms(filmList);
 
 //console.log(data.films[0].poster)
-
-
