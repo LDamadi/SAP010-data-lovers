@@ -36,16 +36,9 @@ export function orderFilms(selectedOrder, filmList) { //orderFilms é o nome da 
     return ordered
   }
 }
-/*export function resultPercent(valor, dados) { 
-  const totalFilms = dados.length;
-  const filmList = dados.filter(film => film.director === valor);
-  const percentage = (filmList.length/totalFilms ) * 100; 
-  console.log(percentage)
-  return 'Este diretor produziu ' + percentage + '% do total de filmes do estúdio.';
-  }*/
-  
-  export function percentual(valorParcial, valorTotal){
 
-    const porcentagem = (valorParcial/valorTotal) * 100; 
-    return("porcentagem")
-  }
+export function percentual(valorParcial, valorTotal) {
+  const porcentagem = (valorParcial/valorTotal) * 100; 
+  return porcentagem;
+}
+  

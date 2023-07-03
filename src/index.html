@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang ="pt-br">
+<html lang="pt-br">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,10 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <header>
-  <div class = "background">
-  <h1 id="textoT">A MAGIA HUMANA E FILOSÓFICA DO STUDIO GHIBLI</h1>
-  <img src="img/Studio_Ghibli_logo.png" alt="logotipo do Studio Ghibli">
-
-
+  <div class="background">
+    <h1 id="textoT">A MAGIA HUMANA E FILOSÓFICA DO STUDIO GHIBLI</h1>
+    <img src="img/Studio_Ghibli_logo.png" alt="logotipo do Studio Ghibli">
+    </div>
 </header>
 
 <body>
@@ -33,7 +33,7 @@
       <!--  <label for="name">Nome do Filme <input type="search" id="name" name="name" placeholder="Nome do Filme"> </label>-->
       <label for="title">Título do Filme:</label>
       <select id="title" name="title">
-      <option value="Todos">Todos</option>
+        <option value="Todos">Todos</option>
         <option value="Castle in the Sky">Castle in the Sky</option>
         <option value="My Neighbor Totoro">My Neighbor Totoro</option>
         <option value="Kiki's Delivery Service">Kiki's Delivery Service</option>
@@ -53,7 +53,7 @@
         <option value="From Up on Poppy Hill">From Up on Poppy Hill</option>
         <option value="The Wind Rises">The Wind Rises</option>
         <option value="The Tale of the Princess Kaguya">The Tale of the Princess Kaguya</option>
-        <option value="When Marnie Was There">When Marnie Was There</option> 
+        <option value="When Marnie Was There">When Marnie Was There</option>
 
       </select>
       <label for="director">Diretor:</label>
@@ -68,19 +68,19 @@
       </select>
       <label for="order">Ordenar</label>
       <select name="order" id="order" class="order">
-          <option value="a-z">A-Z</option>
-          <option value="z-a">Z-A</option>
-          <option selected value="Selecione">Selecione</option>
-        </select>
+        <option value="a-z">A-Z</option>
+        <option value="z-a">Z-A</option>
+        <option selected value="Selecione">Selecione</option>
+      </select>
 
     </form>
 
     <div class="resultado">
       <p id="resultado"></p>
     </div>
- 
+
     <section class="container-films" id="info-films">
-    </section> 
+    </section>
   </main>
   <div id="root"></div>
   <script src="main.js" type="module"></script>

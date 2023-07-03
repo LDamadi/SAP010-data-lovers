@@ -22,8 +22,12 @@ directorSelect.addEventListener("change", filterFilmsByDirector); //Adicionamos 
 function filterFilmsByDirector() {    //criamos uma  função para filtrar com base no diretor selecionado
   const selectedDirector = directorSelect.value;
   const filteredFilms = filmsDirector(selectedDirector, filmList) //executou aqui a função, com valor= selectedDirector e com dados=filmList
-
+  const porcentagem = percentual(filteredFilms.length, filmList.length);
   renderFilms(filteredFilms);
+  if(selectedDirector === "Todos"){
+    elementoResult.innerHTML = ""; 
+  }else { elementoResult.innerHTML = "Este diretor produziu " + porcentagem + "% do total de filmes do estúdio.";
+  }
 }
 renderFilms(filmList);
 
@@ -47,35 +51,7 @@ function orderFilmsByName() {
 }
 
 const elementoResult = document.getElementById("resultado");
-//elementoResult.innerHTML = "resultado";
-elementoResult.innerHTML = "Este diretor produziu " + resultado + "% do total de filmes do estúdio.";
-
-elementoResult.addEventListener('change', percentualF);
-
-function percentualF(){
-  const filmsDirector = elementoResult.value;
-  const resultado = percentual(filmsDirector.length, filmList.length);//executamos a função percentual
-  //elementoResult.innerHTML = "resultado";
-  //renderFilms(resultado);
-
-  console.log (percentual);
-}
-  
-
-  
-
-  //document.getElementById("resultado").innerHTML = porcentagem
-
-//const resultadoElement = document.getElementById("resultado");
-//const resultado = percentual(filmsDirector.length, filmList.length);
-
-//const resultadoElemento = document.getElementById("resultado");
-//resultadoElemento.innerHTML = resultado;
-
-//const filteredFilms = filmsDirector(films, selectedDirector);
-//const porcentagem = percentual(filmsDirector, filmList);
-//displayFilms(filteredFilms);
-  
+ 
 
 //filterFilmsByTitle()
 

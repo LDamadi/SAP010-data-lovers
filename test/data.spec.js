@@ -1,4 +1,4 @@
-import { filmsDirector, filteredFilms, orderFilms } from '../src/data.js';
+import { filmsDirector, filteredFilms, orderFilms, percentual } from '../src/data.js';
 
 const test = "director";
 const valor = [{ director: "Todos" }, { director: "Hayao Miyazaki" }, { director: "Isao Takahata" }]
@@ -41,3 +41,16 @@ describe('orderFilms', () => {
 });
 
 
+
+const testando = "percentual"
+const diretor =  [{ director: "Todos" }, { director: "Hayao Miyazaki" }, { director: "Isao Takahata" }]
+
+describe('percentual', () => {
+  it('is a function', () => {
+    expect(typeof percentual).toBe('function');
+  });
+
+  it('filteredFilms.length `filmList.length`', () => {
+    expect(percentual(testando, diretor)).toEqual([{director: "Hayao Miyazaki"}]);
+  });
+});
