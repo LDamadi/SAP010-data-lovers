@@ -7,6 +7,7 @@
 
 body {
   font-family: 'Poppins', 'Roboto', sans-serif;
+  font-size: 1,8rem;
   margin: 0;
   background-color: #a6c7e2;
   color: #141b24;
@@ -95,8 +96,9 @@ label {
 
 select {
   font-family: "Poppins";
-  width: 200px;
-  font-size: 0.8rem;
+  width: 250px;
+  height: 30px;
+  font-size: 1.2rem;
   text-align: center;
   border: none;
   border-radius: 8px;
