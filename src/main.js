@@ -1,4 +1,4 @@
-import { filmsDirector, filteredFilms, orderFilms, percentual} from './data.js';
+import { filmsDirector, filteredFilms, orderFilms, percentual } from './data.js';
 import data from './data/ghibli/ghibli.js';
 const filmList = data.films
 const section = document.querySelector(".container-films")
@@ -24,9 +24,10 @@ function filterFilmsByDirector() {    //criamos uma  função para filtrar com b
   const filteredFilms = filmsDirector(selectedDirector, filmList) //executou aqui a função, com valor= selectedDirector e com dados=filmList
   const porcentagem = percentual(filteredFilms.length, filmList.length);
   renderFilms(filteredFilms);
-  if(selectedDirector === "Todos"){
-    elementoResult.innerHTML = ""; 
-  }else { elementoResult.innerHTML = "Este diretor produziu " + porcentagem + "% do total de filmes do estúdio.";
+  if (selectedDirector === "Todos") {
+    elementoResult.innerHTML = "";
+  } else {
+    elementoResult.innerHTML = "Este diretor produziu " + porcentagem + "% do total de filmes do estúdio.";
   }
 }
 renderFilms(filmList);
@@ -46,12 +47,13 @@ filterOrder.addEventListener("change", orderFilmsByName);
 
 function orderFilmsByName() {
   const selectedOrder = filterOrder.value;
-  const orderFilmsResult = orderFilms(selectedOrder, filmList);
+  const orderFilmsResult = orderFilms(filmList, selectedOrder);
   renderFilms(orderFilmsResult); // Usei filmList no lugar de a, b e ouve movimentação na ordem dos filmes, contudo, só mudou a posição dos dois primeiros 
+  elementoResult.innerHTML = "";
 }
 
 const elementoResult = document.getElementById("resultado");
- 
+
 
 //filterFilmsByTitle()
 
