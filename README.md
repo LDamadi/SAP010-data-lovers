@@ -1,4 +1,4 @@
-# Data-Lovers - Studio Ghibli
+# [Data-Lovers - Studio Ghibli](https://cibellimonte.github.io/SAP010-data-lovers/)
 
 Neste trabalho, você encontrará uma página web que permitirá visualizar as animações dos Studios Ghibli, através de posters, filtrá-las, ordená-las e ter acesso à informação dos diretores responsáveis por elas. Também forneceremos exemplos práticos para orientá-lo no uso correto das principais funcionalidades.
 
