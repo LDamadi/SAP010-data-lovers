@@ -30,9 +30,7 @@ O primeiro passo foi escrever a história do usuário, assim como os critérios 
 
 Após a construção de cada função, escrevemos os testes unitários,  testamos  e corrigimos os problemas detectados. 
 
-<img src="site01.png">
-
-![site01](src\img\site01.png)
+![testes 100%](src/img/site02.png)
 
 
 Durante os testes de usabilidade percebemos que eram necessários alguns ajustes:
