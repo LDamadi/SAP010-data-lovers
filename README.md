@@ -29,23 +29,29 @@ O primeiro passo foi escrever a história do usuário, assim como os critérios 
 
 ## Protótipo de Baixa Fidelidade
 
-![baixa fidelidade](src/img/prototipohistória1.png)
+![baixa fidelidade](src/img/prototipo_hist%C3%B3ria-1.jpg)
 
 ## Protótipo de Alta Fidelidade
 
+![alta fidelidade](src/img/DATA%20LOVERS%20_%20Prot%C3%B3tipo%20STUDIO%20GHIBLI.png)
 
-
-## Definição de pronto:
-
-Após a construção de cada função, escrevemos os testes unitários,  testamos  e corrigimos os problemas detectados. 
+## Testes Unitários
 
 ![testes 100%](src/img/cobertura_testes.png)
 
+## Definição de pronto:
+
+Após a construção de cada função, escrevemos os testes unitários,  testamos  e corrigimos os problemas detectados.
+
 Durante os testes de usabilidade percebemos que eram necessários alguns ajustes:
+
 •	Aumento na altura e na largura das caixas de pesquisas;
+
 •	Inclusão de lista de animações por nome para que o usuário não precise digitar;
 
+![site01](src/img/site01.png)
 
+![site02](src/img/site02.png)
 
 ## VISÃO GERAL
 
@@ -72,9 +78,11 @@ Cobertura de 100% de declarações, funções, linhas e ramos.
 
 ## Encontre-nos
 Caso você tenha alguma  dúvida, problema ou sugestões relacionadas ao projeto, entre em contato conosco.
+
 Cibelli Monte 
 e-mail – cibellimonte@gmail.com
 Linkedin – https://www.linkedin.com/in/cibelli-monte-9a97a458/
+
 Lilian Rodrigues Polizelli Damadi 
 e-mail – lrpdmarcenaria01@gmail.com
 Linkedin - linkedin.com/in/lilian-damadi-59a223246
